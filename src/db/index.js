@@ -12,10 +12,7 @@ if (process.env.NODE_ENV === "production") {
     ssl: {
       rejectUnauthorized: false,
     }
-    //ssl: process.env.DATABASE_URL ? true : false
-    
   });
-  
 } 
 
 
