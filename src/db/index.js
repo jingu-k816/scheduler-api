@@ -5,7 +5,10 @@ const client = new pg.Client({
   // ssl: {
   //   rejectUnauthorized: false,
   // },
-  ssl: process.env.DATABASE_URL ? true : false
+  ssl: {
+    rejectUnauthorized: process.env.DATABASE_URL ? true : false
+  }
+    
   
 });
 
